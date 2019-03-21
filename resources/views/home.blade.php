@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <button class="btn btn-default get-prize">Получить приз</button>
+                    <div id="result"></div>
                 </div>
             </div>
         </div>

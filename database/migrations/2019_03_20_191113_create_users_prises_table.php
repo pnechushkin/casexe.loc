@@ -17,9 +17,10 @@ class CreateUsersPrisesTable extends Migration
             $table->increments('id');
 	        $table->integer('user_id')->unsigned();
 	        $table->foreign('user_id')->references('id')->on('users');
-            $table->string('prize');
-            $table->string('action');
-            $table->string('status');
+            $table->string('prize_name');
+            $table->string('prize_value');
+            $table->string('action')->nullable()->default(null);
+            $table->string('status')->nullable()->default(null);
             $table->timestamps();
         });
     }
